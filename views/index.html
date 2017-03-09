@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Scope Example</title>
+    <script src="vendors/angular.min.js" charset="utf-8"></script>
+    <script src="scripts/scopeExample.js" charset="utf-8"></script>
+  </head>
+  <body ng-app='myApp'>
+    <h1>Scope Example</h1>
+    <div ng-controller='whateverController'>
+      <p ng-repeat='thing in things'>
+        {{ thing }}
+      </p>
+      <input type="text" ng-model='inputer' /><button ng-click='addInput()'>Add</button>
+    </div>
+  </body>
+</html>
